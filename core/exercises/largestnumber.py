@@ -10,3 +10,15 @@ def largest_number():
 
 
 largest_number()
+
+
+def remove_duplicate():
+    num = [2, 3, 6, 10, 7, 8, 6, 3, 2]
+    for n in num:
+        if num.count(n) > 1:
+            num.remove(n)
+        return num
+
+
+new_list = remove_duplicate()
+print(new_list)
