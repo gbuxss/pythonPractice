@@ -1,16 +1,16 @@
 class Electronics:
-    def __init__(self, catagory, brand):
-        self.catagory = catagory
+    def __init__(self, category, brand):
+        self.category = category
         self.brand = brand
 
     def show_info(self):
-        print("Catagory:", self.catagory)
+        print("Category:", self.category)
         print("Brand:", self.brand)
 
 
 class Television(Electronics):
-    def __init__(self, catagory, brand, price):
-        super().__init__(catagory, brand)
+    def __init__(self, category, brand, price):
+        super().__init__(category, brand)
         self.price = price
 
     def show_tv_info(self):
@@ -19,12 +19,12 @@ class Television(Electronics):
 
 
 class Computer(Television):
-    def __init__(self, catagory, brand, price, comp_type="Laptop"):
-        super().__init__(catagory, brand, price)
+    def __init__(self, category, brand, price, comp_type="Laptop"):
+        super().__init__(category, brand, price)
         self.comp_type = comp_type
 
     def __repr__(self):
-        print(self.catagory)
+        print(self.category)
         print(self.brand)
         print(self.comp_type)
         print(self.price)
